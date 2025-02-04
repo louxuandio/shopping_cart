@@ -38,6 +38,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.shoppingcart.ui.theme.ShoppingCartTheme
 import kotlinx.coroutines.launch
+//reference: My shopping cart on Amazon
+//I finish this one very quickly, basically just copy some code pieces from the previous projects and do some revise
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -133,6 +135,8 @@ class MainActivity : ComponentActivity() {
                             fontWeight = FontWeight.Bold
                         )
                     )
+
+                    //The next part is copied from the Profile project, and I just changed the texts and color
                     val scope = rememberCoroutineScope()
                     var checkout = remember { mutableStateOf(false) }
                     val snackbarHostState = remember { SnackbarHostState() }
